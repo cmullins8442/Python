@@ -1,0 +1,52 @@
+#Create a Magic 8 ball program:
+#Start by importing random and time
+import random
+from time import sleep
+
+#Create a random integer between 1 –9
+ranNum = random.randint(1,9)
+
+#Print“Ask the Magic 8 ball a question”
+print("Ask the Magic 8 ball a question")
+
+#Wait 5 seconds
+sleep(5)
+
+#Print “Searching for an answer.”
+print("Searching for an answer.")
+
+#Print “Please be patient”
+print("Please be patient.")
+
+#Use a for loop to print 10 ‘.’–waiting .5 seconds between each one being printed.
+for time in range(0,10,1):
+    sleep(.5)
+    print(". ", end = " ")
+
+#Wait 1 second
+sleep(1)
+print("\n")
+
+#Use a series of if-elif statements to determine the output from the magic 8 ball program.
+if ranNum == 1:
+    print("It's a possibility.")
+elif ranNum == 2:
+    print("Yes.")
+elif ranNum == 3:
+    print("This mystery is unknowable.")
+elif ranNum == 4:
+    print("No idea.")
+elif ranNum == 5:
+    print("I have a good feeling about it.")
+elif ranNum == 6:
+    print("We're sorry, the answer you are trying to reach is not available at this time, please try again later.")
+elif ranNum == 7:
+    print("No.")
+elif ranNum == 8:
+    print("Not likely.")
+elif ranNum == 9:
+    print("Never gonna happen.")
+else:
+    print("ERROR")
+
+#You should have 9 different responses.
